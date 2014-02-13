@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Ideas</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <ul class="nav navbar-nav  navbar-left">
+      <li><%= link_to "Home", root_path %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="pull-right">
+        <div>
+     
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+<div class="container" style="margin-top: 60px;" > <%= yield %> </div>
+<footer> <div class="container"></div> </footer>
+</body>
+</html>
+
